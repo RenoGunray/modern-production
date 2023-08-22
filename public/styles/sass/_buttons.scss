@@ -1,0 +1,41 @@
+
+@mixin btnPresets {
+  padding: .5rem 3rem;
+  background: none;
+  border: none;
+  margin: .2rem 0rem;
+}
+
+.buttonGroup{
+ width: 35%;
+}
+
+.buttonLearn {
+  @include btnPresets;
+  background-color: $yellow-orange;
+  color: $bg-dark;
+  transition: all .2s ease-in-out;
+
+  // get font weight map
+  font-weight: map-get($font-weights, bold );
+
+  &:hover {
+    color: $gray-color;
+    background-color: $gold-palace;
+  }
+}
+
+.buttonSee {
+  @include btnPresets;
+  border: 2px solid $gray-color;
+  color: $gray-color;
+  transition: all .2s ease-in-out;
+
+  // get font weight map
+  font-weight: map-get( $font-weights, bold );
+
+  &:hover{
+    color: $gray-color;
+    background-color: $bg-dark;
+  }
+}

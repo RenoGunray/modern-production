@@ -1,0 +1,71 @@
+
+// first section
+
+.section {
+  padding: 3rem 1rem;
+}
+
+.section-light{
+  background-color: $gray-color;
+}
+.section-dark{
+  background-color: $bg-dark;
+}
+
+.miniCard {
+  padding: 1rem;
+  text-align: center;
+  #{&}__logo{
+    // get font size map
+    font-size: map-get($font-sizes, large );
+    color: $bg-dark;
+    margin: .5rem;
+  }
+  #{&}__title{
+    color: $bg-dark;
+    margin: 1rem;
+  }
+  #{&}__paragraph {
+    color: $bg-dark;
+    margin: 2rem;
+  }
+  #{&}__profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+}
+
+.innerSection{
+  padding: 3rem;
+  #{&}__image{
+    width: 100%;
+  }
+  #{&}__title{
+    // get font size map
+    font-size: map-get($font-sizes, large );
+    margin: 1rem 0rem;
+    color: $bg-dark;
+  }
+  #{&}__paragraph{
+    margin: 2rem 0rem;
+    color: $bg-dark;
+  }
+}
+
+.innerSectionDark{
+  padding: 3rem;
+  #{&}__image{
+    width: 100%;
+  }
+  #{&}__title{
+    // get font size map
+    font-size: map-get($font-sizes, large );
+    margin: 1rem 0rem;
+    color: $gray-color;
+  }
+  #{&}__paragraph{
+    margin: 2rem 0rem;
+    color: $gray-color;
+  }
+}

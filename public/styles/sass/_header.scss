@@ -1,0 +1,28 @@
+
+.header{
+
+  padding: 15rem 0rem;
+  background-color: $bg-dark;
+
+  #{&}__content{
+    padding: .5rem 2rem;
+    text-align: center;
+    color: $gray-color;
+
+    h1 {
+      // get font size map
+      font-size: map-get($font-sizes, large );
+    }
+
+    p {
+      // get font size map
+      font-size: map-get($font-sizes, mid-regular);
+    }
+
+  }
+
+  #{&}__divider{
+    border: 2px solid $gray-color
+  }
+
+}

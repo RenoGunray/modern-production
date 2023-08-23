@@ -92,6 +92,33 @@
   width: 100%;
 }
 
+.burgeR {
+  padding: 0.3rem;
+  width: 2.5rem;
+  display: none;
+  margin: 0rem 2rem;
+}
+.burgeR .burgeR__line {
+  position: relative;
+  margin: 0.3rem 0rem;
+  width: 100%;
+  border: 2px solid #2a2a2a;
+}
+.burgeR .burgeR__lineShort {
+  position: relative;
+  margin: 0.3rem 0rem;
+  width: 60%;
+  border: 2px solid #2a2a2a;
+}
+
+@media screen and (max-width: 768px) {
+  .burgeR {
+    display: block;
+  }
+  .navBarLinks__navLinks {
+    display: none;
+  }
+}
 .section {
   padding: 3rem 1rem;
 }

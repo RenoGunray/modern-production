@@ -44,3 +44,31 @@
 
   }
 }
+
+.burgeR {
+  padding: .3rem;
+  width: 2.5rem;
+  display: none;
+  margin: 0rem 2rem;
+  #{&}__line {
+   position: relative;
+    margin: .3rem 0rem;
+    width: 100%;
+    border: 2px solid $bg-dark;
+  }
+  #{&}__lineShort {
+    position: relative;
+    margin: .3rem 0rem;
+    width: 60%;
+    border: 2px solid $bg-dark;
+  }
+}
+
+@media screen and (max-width:768px){
+  .burgeR{
+    display: block;
+  }
+  .navBarLinks__navLinks {
+    display: none;
+  }
+}

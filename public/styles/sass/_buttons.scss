@@ -3,12 +3,13 @@
   padding: .5rem 3rem;
   background: none;
   border: none;
-  margin: .2rem 0rem;
+  margin: .2rem .3rem;
 }
 
 .buttonGroup{
- width: 35%;
-}
+  display: flex;
+  justify-content: center;
+ }
 
 .buttonLearn {
   @include btnPresets;
@@ -38,4 +39,13 @@
     color: $gray-color;
     background-color: $bg-dark;
   }
+}
+
+@media screen and (max-width: 768px){
+  .buttonGroup{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
 }

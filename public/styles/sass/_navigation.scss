@@ -55,20 +55,79 @@
     margin: .3rem 0rem;
     width: 100%;
     border: 2px solid $bg-dark;
+    transition: all .3s ease;
+  }
+  #{&}__line2 {
+   position: relative;
+    margin: .3rem 0rem;
+    width: 100%;
+    border: 2px solid $bg-dark;
+    transition: all .3s ease;
   }
   #{&}__lineShort {
     position: relative;
     margin: .3rem 0rem;
     width: 60%;
     border: 2px solid $bg-dark;
+    transition: all .3s ease;
   }
 }
 
 @media screen and (max-width:768px){
+  body {
+    overflow-x: hidden;
+  }
+
   .burgeR{
     display: block;
+    cursor: pointer;
   }
-  .navBarLinks__navLinks {
-    display: none;
+  .navBarLinks {
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 7vh;
+    background-color: white;
+    opacity: .9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    transform: translateX(100%);
+    transition: transform .3s ease-in;
+    #{&}__navLinks {
+      margin: 3rem 0rem;
+      opacity: 0;
+    }
   }
+
+  .navBarLinks-active {
+    transform: translateX(0%);
+  }
+
+}
+
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .burgeR__line {
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .burgeR__lineShort{
+  transform: rotate(45deg) translate(-5px,-6px);
+  width: 100%;
+}
+
+.toggle .burgeR__line2 {
+  
+  opacity: 0;
 }

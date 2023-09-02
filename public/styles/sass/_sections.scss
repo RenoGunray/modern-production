@@ -5,6 +5,10 @@
   padding: 3rem 1rem;
 }
 
+.section-padding {
+  padding: 4rem 8rem;
+}
+
 .section-light{
   background-color: $gray-color;
 }
@@ -37,9 +41,10 @@
 }
 
 .innerSection{
-  padding: 3rem;
+  
   #{&}__image{
-    width: 100%;
+    width: 70%;
+    margin: auto;
   }
   #{&}__title{
     // get font size map
@@ -50,6 +55,11 @@
   #{&}__paragraph{
     margin: 2rem 0rem;
     color: $bg-dark;
+  }
+  #{&}__divider{
+    //margin: 0rem 2rem;
+    border: 2px solid $yellow-orange;
+    width: 25%;
   }
 }
 
@@ -67,5 +77,153 @@
   #{&}__paragraph{
     margin: 2rem 0rem;
     color: $gray-color;
+  }
+}
+
+.footer {
+  background-color: $bg-dark;
+  padding: 3rem;
+  display: flex;
+  #{&}__container{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    .title {
+      padding: 2rem 0rem;
+      color: $gold-palace;
+      // insert map
+      font-weight: map-get($font-weights, bold );
+      font-size: map-get($font-sizes, medium);
+    }
+
+    .subtitle {
+      display: flex;
+      flex-direction: column;
+      color: $gold-palace;
+
+      h4 {
+        margin-right: 1rem;
+        font-size: map-get($font-sizes, small );
+      }
+      
+    }
+     
+  }
+
+}
+
+.inner-back {
+  position: relative;
+  top: 0;
+  width: 0%;
+  margin: auto;
+  border-bottom: 4px solid $yellow-orange;
+  transition: all .2s ease-in;
+}
+
+.project-ancor {
+  margin: .1rem;
+  text-decoration: none;
+  color: $gray-color;
+
+}
+
+.project__image {
+  width: 100%;  
+}
+
+.project-group{
+  width: 100%;
+  margin: auto;
+  transition: all .1s ease-in;
+  color: $bg-dark;
+
+  &:hover {
+    transform: scale(1.01);
+    //color: $bg-dark;
+    .inner-back {
+      width: 100%;
+    }
+  }
+}
+
+.Container{
+  background-color: $gray-color;
+  padding: 1rem;
+}
+
+.project-title {
+  color: $gray-color;
+}
+
+.project-subtitle{
+  color: $gray-color;
+  // insert a map
+  font-weight: map-get($font-weights, medium );
+}
+
+.project-title-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-group {
+  width: 25%;
+  display: flex;
+  //justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .section-padding {
+    padding: 2rem 4rem;
+    // border: 1px solid white;
+  }
+
+  .project-title-group {
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+  }
+
+  .title-group {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .footer {
+    background-color: $bg-dark;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    #{&}__container{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: auto;
+  
+      .title {
+        padding: 2rem 0rem;
+        color: $gold-palace;
+        // insert map
+        font-weight: map-get($font-weights, bold );
+        font-size: map-get($font-sizes, medium);
+      }
+  
+      .subtitle {
+        display: flex;
+        flex-direction: column;
+        color: $gold-palace;
+  
+        h4 {
+          margin-right: 1rem;
+          font-size: map-get($font-sizes, small );
+        }
+        
+      }
+       
+    }
+  
   }
 }

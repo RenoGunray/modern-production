@@ -52,14 +52,14 @@
   <header class="header">
     <!-- header background -->
     <div class="header__content">
-      <h1>Modern Production</h1>
+      <h1 class="from-top">Modern Production</h1>
       <hr class="header__divider w-25 m-auto mb-4 mt-4">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, architecto.</p>
+      <p class="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, architecto.</p>
       <div class="m-auto">
         <div class="row justify-content-center">
           <div class="col-lg-6 col-md-12 col-sm-12 buttonGroup">
-            <button class="buttonLearn">LEARN MORE</button>
-            <button class="buttonSee">SEE ALL DEMOS</button>
+            <button class="buttonLearn fade-in from-left">LEARN MORE</button>
+            <button class="buttonSee fade-in from-right">SEE ALL DEMOS</button>
           </div>
           <!-- <div class="col-lg-6 col-md-12 col-sm-12">
           </div> -->
@@ -91,10 +91,10 @@
   <section class="section section-light">
     <div class="row justify-content-center">
       <div class="col-lg-6 col-sm-12 innerSection align-self-center">
-        <img src="./public/images/wallpweb.jpg" class="innerSection__image" alt="image">
+        <img src="./public/images/clement-helardot-95YRwf6CNw8-unsplash.jpg" class="innerSection__image" alt="image">
       </div>
       <div class="col-lg-6 col-sm-12 innerSection align-self-center">
-        <h4 class="innerSection__title">Web Desing</h4>
+        <h4 class="innerSection__title">Websites</h4>
         <p class="innerSection__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
         <button class="buttonLearn">LEARN MORE</button>
       </div>
@@ -104,7 +104,7 @@
   <section class="section">
     <div class="row justify-content-center">
       <div class="col-lg-6 col-sm-12 innerSection align-self-center">
-        <h4 class="innerSection__title">Branding</h4>
+        <h4 class="innerSection__title">Web Apps</h4>
         <p class="innerSection__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
         <button class="buttonLearn">LEARN MORE</button>
       </div>
@@ -114,7 +114,7 @@
     </div>
   </section>
 
-  <section class="section section-dark">
+  <!-- <section class="section section-dark">
     <div class="row justify-content-center">
       <div class="col-lg-6 col-sm-12 innerSectionDark align-self-center">
         <img src="./public/images/walling-e_MdMMKrgdY-unsplash.jpg" class="innerSectionDark__image" alt="image">
@@ -125,20 +125,68 @@
         <button class="buttonLearn">LEARN MORE</button>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="section">
+  <section class="section section-dark">
     
-    <div class="row justify-content-center">
+    <div class="row justify-content-center section-padding">
 
       <div class="col-lg-12 col-sm-12 innerSection align-self-center">
-        <h1>Featured Work</h1>
+        <div class="project-title-group">
+          <div class="title-group">
+            <div class="innerSection__divider align-self-center"></div>
+            <h1 class="ms-4 project-title">Works</h1>
+          </div>
+          <div class="">
+            <button class="buttonLearn"> VIEW ALL &rarr;</button>
+          </div>
+        </div>
+        <p class="mt-3 mb-5 project-subtitle">SAMPLE PROJECTS</p>
       </div>
-      <div class="col-lg-6 col-sm-12 innerSection align-self-center">
-        <img src="./public/images/wallpweb.jpg" class="innerSection__image" alt="image">
+      <div class="col-lg-3 col-sm-12 innerSection align-self-center">
+        <a href="#" class="project-ancor">
+          <div class="project-group">
+            <img src="./public/images/james-harrison-vpOeXr5wmR4-unsplash.jpg" class="project__image" alt="image">
+            <div class="Container">
+              <p class="p-4">something</p>
+            </div>
+            <div class="inner-back"></div>
+          </div>
+        </a>
       </div>
-      <div class="col-lg-6 col-sm-12 innerSection align-self-center">
-        <img src="./public/images/wallpweb.jpg" class="innerSection__image" alt="image">
+      <div class="col-lg-3 col-sm-12 innerSection align-self-center">
+        <a href="#" class="project-ancor">
+          <div class="project-group">
+            <img src="./public/images/james-harrison-vpOeXr5wmR4-unsplash.jpg" class="project__image" alt="image">
+            <div class="Container">
+              <p class="p-4">something</p>
+            </div>
+            <div class="inner-back"></div>
+          </div> 
+        </a>
+      </div>
+      <div class="col-lg-3 col-sm-12 innerSection align-self-center">
+        <a href="#" class="project-ancor">
+          <div class="project-group">
+            <img src="./public/images/james-harrison-vpOeXr5wmR4-unsplash.jpg" class="project__image" alt="image">
+            <div class="Container">
+              <p class="p-4">something</p>
+            </div>
+            <div class="inner-back"></div>
+          </div>     
+        </a>
+      </div>
+      <div class="col-lg-3 col-sm-12 innerSection align-self-center">
+        <a href="#" class="project-ancor">
+          <div class="project-group">
+            <img src="./public/images/james-harrison-vpOeXr5wmR4-unsplash.jpg" class="project__image" alt="image">
+            <div class="Container">
+              <h4 class="">Name of site</h4>
+              <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit?</p>
+            </div>
+            <div class="inner-back"></div>
+          </div>      
+        </a>
       </div>
     </div>
   </section>
@@ -160,6 +208,37 @@
         <h4 class="miniCard__title">Fast work turnaround</h4>
         <p class="miniCard__paragraph">Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor.</p>
       </div> -->
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="footer__container find">
+      <h1 class="title">
+        CONTACT US
+      </h1>
+      <div class="subtitle">
+        <h4 class="">
+          Email
+        </h4>
+        <div>
+          <p>theodorenkhwamba@gmail.com</p>
+        </div>
+      </div>
+      <div class="subtitle">
+        <h4 class="">
+          Phone
+        </h4>
+        <p>  0888288494</p>
+        <p>  0984135077</p>
+      </div>
+    </div>
+
+    <div class="footer__container about">
+      <h1 class="title"> ABOUT US </h1>
+
+      <div class="subtitle">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae minima ullam expedita sit quo unde placeat corrupti neque, porro error. Et nam vero ex mollitia eum, nisi tenetur velit perspiciatis.</p>
+      </div>
     </div>
   </section>
 

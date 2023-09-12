@@ -22,22 +22,28 @@
   <!-- Navigation -->
   <nav class="navBar d-flex justify-content-between">
     <div class="navBar__navLogo">
-      <h4>Modern Production</h4>
+      <a href="#home" class="nav-logo">
+        <h4>Modern Production</h4>
+      </a>
     </div>
     <div class="navBarLinks d-flex justify-content-center">
-        <a href="#" class="navBarLinks__navLinks">
+        <a href="#home" class="navBarLinks__navLinks">
           HOME
           <div class="back"></div>
         </a>
       
-        <a href="#" class="navBarLinks__navLinks">
+        <a href="#footer" class="navBarLinks__navLinks">
           ABOUT
           <div class="back"></div>
         </a>
       
-      
-        <a href="#" class="navBarLinks__navLinks">
+        <a href="#projects" class="navBarLinks__navLinks">
           PROJECTS
+          <div class="back"></div>
+        </a>
+
+        <a href="#" class="navBarLinks__navLinks">
+          HELLO BACKENDERS
           <div class="back"></div>
         </a>
     </div>
@@ -49,12 +55,12 @@
   </nav>
 
   <!-- Header -->
-  <header class="header">
+  <header class="header" id="home">
     <!-- header background -->
     <div class="header__content">
       <h1 class="from-top">Modern Production</h1>
       <hr class="header__divider w-25 m-auto mb-4 mt-4">
-      <p class="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, architecto.</p>
+      <p class="fade-in">Modern Day Software Production</p>
       <div class="m-auto">
         <div class="row justify-content-center">
           <div class="col-lg-6 col-md-12 col-sm-12 buttonGroup">
@@ -72,30 +78,31 @@
     <div class="row justify-content-center">
       <div class="col-lg-4 col-md-6 col-xm-12 miniCard">
         <i class="fa-solid fa-check miniCard__logo"></i>
-        <h4 class="miniCard__title">Fixed Price Projects</h4>
-        <p class="miniCard__paragraph">Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor.</p>
+        <h4 class="miniCard__title">Low Price Projections</h4>
+        <p class="miniCard__paragraph">At Modern Producion, we offer unbeatable prices, always open to negotiation. Get started with just a 50% down payment. Quality and affordability, guaranteed.</p>
       </div>
       <div class="col-lg-4 col-md-6 col-xm-12 miniCard">
         <i class="fa-regular fa-gem miniCard__logo"></i>
         <h4 class="miniCard__title">Receive on time</h4>
-        <p class="miniCard__paragraph">Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor.</p>
+        <p class="miniCard__paragraph"> We're dedicated to crafting websites efficiently and delivering them within the agreed time frame. Experience prompt, efficient, and high-quality web development with us.</p>
       </div>
       <div class="col-lg-4 col-md-6 col-xm-12 miniCard">
         <i class="fa-solid fa-bolt-lightning miniCard__logo"></i>
-        <h4 class="miniCard__title">Fast work turnaround</h4>
-        <p class="miniCard__paragraph">Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor.</p>
+        <h4 class="miniCard__title">Improved Speed & efficiency</h4>
+        <p class="miniCard__paragraph">Enhance the speed and efficiency of your existing website with our expert services. Experience a faster, more efficient online presence today.</p>
       </div>
     </div>
   </section>
 
   <section class="section section-light">
     <div class="row justify-content-center">
-      <div class="col-lg-6 col-sm-12 innerSection align-self-center">
+      <div class="col-lg-6 col-sm-12 innerSection d-flex justify-content-center">
         <img src="./public/images/clement-helardot-95YRwf6CNw8-unsplash.jpg" class="innerSection__image" alt="image">
       </div>
       <div class="col-lg-6 col-sm-12 innerSection align-self-center">
         <h4 class="innerSection__title">Websites</h4>
-        <p class="innerSection__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <p class="innerSection__paragraph">At Modern Production, we specialize in creating dynamic and visually appealing websites that effectively represent your brand</p>
+        <!-- <p class="innerSection__paragraph">A website is like the online storefront of your business. It primarily serves as an informational platform, offering visitors valuable content, services, or products. Websites are designed to showcase your brand, provide information, and engage your audience. They are often static or content-driven, offering pages like home, about us, contact, and blogs. Websites are ideal for presenting information and creating an online presence.</p> -->
         <button class="buttonLearn">LEARN MORE</button>
       </div>
     </div>
@@ -105,10 +112,12 @@
     <div class="row justify-content-center">
       <div class="col-lg-6 col-sm-12 innerSection align-self-center">
         <h4 class="innerSection__title">Web Apps</h4>
-        <p class="innerSection__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <p class="innerSection__paragraph">At Modern Production, we excel in developing custom web applications that streamline processes, enhance user experiences, and provide efficient solutions for your unique needs.</p>
+
+        <!-- <p class="innerSection__paragraph">On the other hand, a web application is a more interactive and dynamic online tool. Unlike websites, web applications are designed for specific functions and often involve user input and data processing. They provide tailored solutions, such as e-commerce platforms, project management tools, or social networks. Web applications offer advanced features and functionalities, such as user accounts, databases, and real-time updates.</p> -->
         <button class="buttonLearn">LEARN MORE</button>
       </div>
-      <div class="col-lg-6 col-sm-12 innerSection align-self-center">
+      <div class="col-lg-6 col-sm-12 innerSection d-flex justify-content-center">
         <img src="./public/images/nubelson-fernandes-Bv2FCJoh8XM-unsplash.jpg" class="innerSection__image" alt="image">
       </div>
     </div>
@@ -127,7 +136,7 @@
     </div>
   </section> -->
 
-  <section class="section section-dark">
+  <section class="section section-dark" id="projects">
     
     <div class="row justify-content-center section-padding">
 
@@ -146,9 +155,9 @@
       <div class="col-lg-3 col-sm-12 innerSection align-self-center">
         <a href="#" class="project-ancor">
           <div class="project-group">
-            <img src="./public/images/james-harrison-vpOeXr5wmR4-unsplash.jpg" class="project__image" alt="image">
+            <img src="./public/images/Screenshot (3).png" class="project__image" alt="image">
             <div class="Container">
-              <p class="p-4">something</p>
+              <h5 class="p-4">Travel</h5>
             </div>
             <div class="inner-back"></div>
           </div>
@@ -157,9 +166,9 @@
       <div class="col-lg-3 col-sm-12 innerSection align-self-center">
         <a href="#" class="project-ancor">
           <div class="project-group">
-            <img src="./public/images/james-harrison-vpOeXr5wmR4-unsplash.jpg" class="project__image" alt="image">
+            <img src="./public/images/Screenshot (4).png" class="project__image" alt="image">
             <div class="Container">
-              <p class="p-4">something</p>
+              <h5 class="p-4">Gym</h5>
             </div>
             <div class="inner-back"></div>
           </div> 
@@ -168,9 +177,9 @@
       <div class="col-lg-3 col-sm-12 innerSection align-self-center">
         <a href="#" class="project-ancor">
           <div class="project-group">
-            <img src="./public/images/james-harrison-vpOeXr5wmR4-unsplash.jpg" class="project__image" alt="image">
+            <img src="./public/images/Screenshot (5).png" class="project__image" alt="image">
             <div class="Container">
-              <p class="p-4">something</p>
+              <h5 class="p-4">Coach</h5>
             </div>
             <div class="inner-back"></div>
           </div>     
@@ -179,10 +188,9 @@
       <div class="col-lg-3 col-sm-12 innerSection align-self-center">
         <a href="#" class="project-ancor">
           <div class="project-group">
-            <img src="./public/images/james-harrison-vpOeXr5wmR4-unsplash.jpg" class="project__image" alt="image">
+            <img src="./public/images/Screenshot (6).png" class="project__image" alt="image">
             <div class="Container">
-              <h4 class="">Name of site</h4>
-              <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit?</p>
+              <h5 class="p-4">Store</h5>
             </div>
             <div class="inner-back"></div>
           </div>      
@@ -195,13 +203,15 @@
     <div class="row justify-content-center">
       <div class="col-lg-4 col-md-6 col-xm-12 miniCard">
         <img src="./public/images/christopher-campbell-square.jpg" class="miniCard__profile" alt="profile">
-        <h4 class="miniCard__title">Jessica Lawrence</h4>
-        <p class="miniCard__paragraph">Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor.</p>
+        <h4 class="miniCard__title">Nkhwamba Theodore Msonda</h4>
+        <h6>Software Developer</h6>
+        <p class="miniCard__paragraph">+265 888 288 494 || +265 984 135 077 <br> theodorenkhwamba@gmail.com</p>
       </div>
       <div class="col-lg-4 col-md-6 col-xm-12 miniCard">
         <img src="./public/images/michael-dam-square.jpg" class="miniCard__profile" alt="profile">
-        <h4 class="miniCard__title">Marria Mury</h4>
-        <p class="miniCard__paragraph">Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor.</p>
+        <h4 class="miniCard__title">Michael Penjani Gondwe</h4>
+        <h6>System Designer</h6>
+        <p class="miniCard__paragraph">+265 881 010 813 || +265 991 146 994 <br> michael1122gondwe@gmail.com</p>
       </div>
       <!-- <div class="col-lg-4 col-md-6 col-xm-12 miniCard">
         <i class="fa-solid fa-bolt-lightning miniCard__logo"></i>
@@ -211,7 +221,7 @@
     </div>
   </section>
 
-  <section class="footer">
+  <section class="footer" id="footer">
     <div class="footer__container find">
       <h1 class="title">
         CONTACT US
@@ -237,7 +247,9 @@
       <h1 class="title"> ABOUT US </h1>
 
       <div class="subtitle">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae minima ullam expedita sit quo unde placeat corrupti neque, porro error. Et nam vero ex mollitia eum, nisi tenetur velit perspiciatis.</p>
+        <p>At Modern Production, we're passionate about crafting online experiences that matter. With a commitment to affordability, efficiency, and expertise, we specialize in creating dynamic websites and web applications. </p>
+          
+        <p> Whether you need a captivating website to represent your brand or a tailored web application to streamline your operations, we have you covered. Our team is dedicated to delivering top-notch solutions, on time and within your budget. Experience the difference with Modern Production.</p>
       </div>
     </div>
   </section>

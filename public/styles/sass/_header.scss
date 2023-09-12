@@ -13,11 +13,13 @@
     color: $gray-color;
 
     h1 {
+      letter-spacing: 10px;
       // get font size map
       font-size: map-get($font-sizes, large );
     }
 
     p {
+      letter-spacing: 10px;
       // get font size map
       font-size: map-get($font-sizes, mid-regular);
     }

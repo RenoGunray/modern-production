@@ -140,7 +140,11 @@
   color: #e8e8e8;
 }
 .header .header__content h1 {
+  letter-spacing: 10px;
   font-size: 60px;
+}
+.header .header__content p {
+  letter-spacing: 10px;
 }
 .header .header__divider {
   border: 2px solid #e8e8e8;
@@ -351,7 +355,7 @@
 }
 .footer .footer__container .title {
   padding: 2rem 0rem;
-  color: #a77a31;
+  color: #f3b44f;
   font-weight: 650;
   font-size: 30px;
 }
@@ -447,7 +451,7 @@
   }
   .footer .footer__container .title {
     padding: 2rem 0rem;
-    color: #a77a31;
+    color: #f3b44f;
     font-weight: 650;
     font-size: 30px;
   }

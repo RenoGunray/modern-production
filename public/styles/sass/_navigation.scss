@@ -10,6 +10,14 @@
   }
 }
 
+.nav-logo{
+  color: $bg-dark;
+  text-decoration: none;
+  transition: all .2s ease-in;
+  &:hover {
+    color: $gold-palace;
+  }
+}
 
 .navBarLinks {
   align-items: center;

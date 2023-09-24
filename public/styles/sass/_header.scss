@@ -13,13 +13,14 @@
     color: $gray-color;
 
     h1 {
-      letter-spacing: 10px;
+      letter-spacing: 3px;
       // get font size map
       font-size: map-get($font-sizes, large );
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
     p {
-      letter-spacing: 10px;
+      letter-spacing: 5px;
       // get font size map
       font-size: map-get($font-sizes, mid-regular);
     }

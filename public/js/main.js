@@ -19,4 +19,19 @@ const navSlide = () => {
 
 }
 
+const showMore = () => {
+  const showButtons = document.querySelectorAll(".show");
+  //const details = document.querySelectorAll(".details");
+  showButtons.forEach((showbtn) => {
+    showbtn.addEventListener('click', () => {
+      const details = showbtn.nextElementSibling;
+      if (details) {
+        details.classList.toggle("active");
+        details.classList.toggle("fade-in");
+      }
+    });
+  });
+}
+showMore();
 navSlide();
+

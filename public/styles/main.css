@@ -285,7 +285,7 @@
 }
 
 .section-padding {
-  padding: 4rem 8rem;
+  padding: 4rem 4rem;
 }
 
 .section-light {
@@ -451,7 +451,7 @@
 
 @media screen and (max-width: 768px) {
   .section-padding {
-    padding: 2rem 4rem;
+    padding: 2rem 0.5rem;
   }
   .project-title-group {
     display: flex;

@@ -129,7 +129,7 @@
 }
 .header {
   padding: 15rem 0rem;
-  background-image: linear-gradient(180deg, rgba(52, 36, 2, 0.878), rgba(75, 73, 3, 0.79)), url(../images/james-harrison-vpOeXr5wmR4-unsplash.jpg);
+  background-image: linear-gradient(180deg, rgba(52, 36, 2, 0.878), rgba(75, 73, 3, 0.79)), url(../images/james-unsplash.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -487,5 +487,8 @@
   }
   .footer .footer__container .subtitle h4 {
     margin-right: 1rem;
+  }
+  .innerSection {
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
